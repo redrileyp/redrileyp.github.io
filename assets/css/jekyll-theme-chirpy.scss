@@ -1,0 +1,66 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+[data-mode="dark"] {
+  /* 1. Define the keyframe animation */
+  @keyframes mesh {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }
+
+  /* 2. Target Chirpy's main wrapper and turn off standard body backgrounds */
+  body, #main-wrapper {
+    background: linear-gradient(135deg, #310000 0%, #1E1E1E 100%) !important;
+  }
+
+  #main-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    z-index: 0;
+  }
+
+  /* 3. Inject the animated background blobs behind the text */
+  #main-wrapper::before,
+  #main-wrapper::after {
+    content: '';
+    position: fixed; /* Keeps them in place while scrolling */
+    width: 50vw;
+    height: 50vh;
+    background: linear-gradient(135deg, #f12711 0%, #fee140 100%);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    filter: blur(80px);
+    opacity: 0.35; /* Lowered opacity so text remains readable */
+    animation: mesh 8s ease-in-out infinite;
+    z-index: -1; /* Ensures blobs stay behind content */
+    pointer-events: none; /* Prevents interference with text selection or clicks */
+  }
+
+  #main-wrapper::before {
+    top: -10%;
+    left: -10%;
+  }
+
+  #main-wrapper::after {
+    bottom: -10%;
+    right: -10%;
+    animation-delay: -4s;
+  }
+}
