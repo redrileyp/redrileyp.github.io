@@ -20,11 +20,14 @@ author: Riley Patterson
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: here!
+  About Me: "aboutme" 
+  Find my Creations:
+    - Thingiverse (head-bases): "https://www.thingiverse.com/redrileypcreates/designs"
+    - Printables (head-bases): "https://www.printables.com/@redrileyp_5237623/models"
+    - GitHub: "https://github.com/redrileyp"
+  Support me!:
+    - Ko-fi: "https://ko-fi.com/redrileypcreates"
+    - Custom Commissions: "commission"
 
 ################
 # --- Logo --- #
@@ -32,10 +35,10 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/redrileyp.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
@@ -136,10 +139,16 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#D05353"
+# dark purple: 23022E
+# light purple: 7E2E84
+# red: D05353
+# yellow: F9E784
+# pink: FF8A9F
+
+page-col: "#FF8A9F"
 text-col: "#FFFFFF"
-link-col: "#F9E784"
-hover-col: "#F9E784"
+link-col: "#FFFFFF"
+hover-col: "#7E2E84"
 navbar-col: "#23022E"
 navbar-text-col: "#FFFFFF"
 navbar-border-col: "#FFFFFF"
@@ -159,8 +168,8 @@ footer-hover-col: "#7E2E84"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
