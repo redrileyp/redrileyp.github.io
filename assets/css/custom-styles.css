@@ -21,3 +21,25 @@ footer {
 .navbar-custom.top-nav-regular .avatar-container .avatar-img {
   width: 150%;
 }
+
+#quote-calculator {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#total-price {
+  color: #F9E784;
+}
+
+.hidden {
+  display: none;
+}

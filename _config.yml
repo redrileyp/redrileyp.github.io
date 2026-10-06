@@ -76,7 +76,7 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-  bluesky: redrileyp
+  bluesky: redrileyp.bsky.social
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
@@ -147,7 +147,7 @@ navbar-var-length: false
 
 page-col: "#FF8A9F"
 text-col: "#FFFFFF"
-link-col: "#FFFFFF"
+link-col: "#F9E784"
 hover-col: "#7E2E84"
 navbar-col: "#23022E"
 navbar-text-col: "#FFFFFF"
