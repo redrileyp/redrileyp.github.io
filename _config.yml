@@ -111,7 +111,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "redrileyp.github.io"
+url-pretty: "redrileypcreates.art"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -186,7 +186,7 @@ site-css:
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-#gtag: "G-XXXXXXXXXX"
+gtag: "G-PSL2J43PBJ"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
