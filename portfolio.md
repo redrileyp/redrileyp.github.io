@@ -4,7 +4,7 @@ title: "Art Gallery"
 permalink: /portfolio/
 ---
 
-<h1>My Portfolio</h1>
+<h1>My Art Portfolio</h1>
 
 <div class="art-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
   {% assign artworks_by_year = site.portfolio | sort: "year" | reverse %}
