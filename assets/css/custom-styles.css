@@ -49,3 +49,8 @@ footer {
   text-align: center;
   font-size: 12px;
 }
+
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+}
