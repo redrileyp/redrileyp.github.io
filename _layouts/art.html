@@ -19,7 +19,33 @@ layout: base
         <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
       {% endif %}
 
+      {% if page.year %}
+        <div class="year" style="text-align: center; font-style: italic;">
+          Date: {{ page.year | date: "%b %Y" }}
+        </div>
+      {% endif %}
+      {% if page.program %}
+        <div class="program" style="text-align: center; font-style: italic;">
+          Program used: {{ page.program }}
+        </div>
+      {% endif %}
+      {% if page.time %}
+        <div class="time" style="text-align: center; font-style: italic;">
+          Time spent: {{ page.time }}
+        </div>
+      {% endif %}
+
       {{ content }}
+
+      <!-- Go back to previous page -->
+      <ul class="pagination blog-pager">
+        <li class="page-item previous">
+          <a class="page-link" href="javascript:history.back()" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">
+            <i class="fas fa-arrow-left" alt="Go back"></i>
+            <span class="d-none d-sm-inline-block">go back to whence you came</span>
+          </a>
+        </li>
+      </ul>
 
       {% if page.after-content %}
         <div class="after-content">

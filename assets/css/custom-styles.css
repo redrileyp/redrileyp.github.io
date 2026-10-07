@@ -43,3 +43,9 @@ footer {
 .hidden {
   display: none;
 }
+
+.art-caption {
+  font-style: italic;
+  text-align: center;
+  font-size: 12px;
+}
