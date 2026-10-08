@@ -54,3 +54,64 @@ footer {
   display: flex;
   justify-content: center; /* Centers horizontally */
 }
+
+/* comments */
+.welcomments__container .welcomments__form-group input,
+.welcomments__container .welcomments__form-group textarea {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 216, 223, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 138, 159, var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 138, 159, var(--tw-border-opacity));
+}
+
+.welcomments__container .welcomments__form-group textarea::placeholder,
+.welcomments__container .welcomments__form-group input::placeholder {
+  --tw-text-opacity: 1;
+  color: rgba(255, 138, 159, var(--tw-text-opacity));
+}
+
+.welcomments__container .welcomments__form-group input:focus,
+.welcomments__container .welcomments__form-group textarea:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(249, 231, 132, var(--tw-border-opacity));
+}
+
+/* Style the submit button */
+.welcomments__container .welcomments__submit-button,
+.welcomments__container .welcomments__comment-reply-link {
+  --tw-bg-opacity: 1;
+  background-color: rgba(126, 46, 132, var(--tw-bg-opacity));
+  color: #ffffff;
+}
+
+.welcomments__container .welcomments__submit-button:hover,
+.welcomments__container .welcomments__comment-reply-link:hover {
+  background-color: #9C4EB3;
+}
+
+.welcomments__container .welcomments__markdown-notice,
+.welcomments__container .welcomments__email-notice,
+.welcomments__container .welcomments__optional-notice {
+  color: rgba(126, 46, 132, var(--tw-text-opacity));
+}
+
+.welcomments__container .welcomments__form-group label,
+.welcomments__container .welcomments__comments-title {
+  --tw-text-opacity: 1;
+  color: rgba(249, 231, 132, var(--tw-text-opacity));
+}
+
+.welcomments__container .welcomments__comment-message blockquote,
+.welcomments__container .welcomments__comment-message ol,
+.welcomments__container .welcomments__comment-message p,
+.welcomments__container .welcomments__comment-message pre,
+.welcomments__container .welcomments__comment-message ul {
+    color: #ffffff;
+}
+
+.welcomments__container .welcomments__comment-time a {
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
