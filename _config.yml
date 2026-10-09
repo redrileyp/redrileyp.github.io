@@ -21,13 +21,13 @@ author: Riley Patterson
 
 navbar-links:
   About Me: "aboutme" 
-  Custom Headbases:
+  Headbases:
     - Thingiverse (free head-bases): "https://www.thingiverse.com/redrileypcreates/designs"
     - Suggest a headbase!: "suggestion"
-    - Order a headbase!: 
-  Support me!:
-    - Ko-fi: "https://ko-fi.com/redrileypcreates"
-    - Custom Commissions: "commission"
+  Commissions:
+    - Adoptables (coming soon!)
+    - Art: "https://ko-fi.com/redrileypcreates/commissions"
+    - Fursuit: "commission"
   Portfolio: "portfolio"
 
 collections:
