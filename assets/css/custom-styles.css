@@ -115,3 +115,17 @@ footer {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+
+/* blog post images */
+.crop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crop-container img {
+  border-radius: 15px;
+  width: 80%;
+  height: 500px;
+  object-fit: cover;
+}
